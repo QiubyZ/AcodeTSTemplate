@@ -9,6 +9,10 @@ class AcodePlugin {
 
     async destroy() {
         // Add your cleanup code here
+        if (AppSettings.value[plugin.id]){
+            delete AppSettings.value[plugin.id];
+            AppSettings.update();
+        }
     }
 }
 
