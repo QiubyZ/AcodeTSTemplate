@@ -1,4 +1,5 @@
 import plugin from '../plugin.json';
+let AppSettings = acode.require("settings");
 
 class AcodePlugin {
     public baseUrl: string | undefined;
